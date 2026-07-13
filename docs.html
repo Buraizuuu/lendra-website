@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentation | Lendra</title>
+<meta name="description" content="The complete Lendra guide: borrowers, loans, repayments, penalties, calendar, investments, profiles, settings, and backup &amp; restore.">
+<link rel="canonical" href="https://lendra.vercel.app/docs">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lendra">
+<meta property="og:title" content="Documentation | Lendra">
+<meta property="og:description" content="The complete Lendra guide: borrowers, loans, repayments, penalties, calendar, investments, profiles, settings, and backup &amp; restore.">
+<meta property="og:url" content="https://lendra.vercel.app/docs">
+<meta property="og:image" content="https://lendra.vercel.app/assets/screenshots/dashboard.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Documentation | Lendra">
+<meta name="twitter:description" content="The complete Lendra guide: borrowers, loans, repayments, penalties, calendar, investments, profiles, settings, and backup &amp; restore.">
+<meta name="twitter:image" content="https://lendra.vercel.app/assets/screenshots/dashboard.png">
+<meta name="theme-color" content="#0B4A52">
+<link rel="icon" href="assets/lendra-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a href="/" class="brand">
+      <img src="assets/lendra-logo.svg" alt="Lendra logo">
+      Lendra
+    </a>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="gallery">Gallery</a>
+      <a href="docs" class="active">Docs</a>
+      <a href="changelog">Changelog</a>
+      <a href="about">About</a>
+    <a href="#" data-mail="YnJpb25lcy5nLmJyeWxlQGdtYWlsLmNvbQ==" rel="nofollow noopener" class="btn btn-primary mobile-cta">Get in Touch</a>
+    </nav>
+    <div class="nav-right">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode">
+        <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="iconSun" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <a href="#" data-mail="YnJpb25lcy5nLmJyeWxlQGdtYWlsLmNvbQ==" rel="nofollow noopener" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </div>
+</header>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="kicker">Documentation</span>
+    <h1>The complete Lendra guide</h1>
+    <p>Everything you need to run a private lending book from onboarding to portfolio ROI.</p>
+  </div>
+</div>
+
+<main class="wrap docs-shell">
+  <aside class="docs-toc" id="toc">
+    <div class="docs-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="search" id="docsSearch" placeholder="Search the docs&hellip;" aria-label="Search documentation" autocomplete="off">
+    </div>
+    <span class="toc-title">Get Started</span>
+    <a href="#doc-intro">Introduction</a>
+    <a href="#doc-install">Getting Started</a>
+    <a href="#doc-profiles">Profiles</a>
+
+    <span class="toc-title">Core Workflow</span>
+    <a href="#doc-borrowers">1. Borrowers</a>
+    <a href="#doc-loans">2. Loans</a>
+    <a href="#doc-repayments">3. Repayments</a>
+    <a href="#doc-penalties">4. Penalties</a>
+    <a href="#doc-calendar">5. Calendar</a>
+    <a href="#doc-investments">6. Investments</a>
+    <a href="#doc-documents">7. Printable Documents</a>
+
+    <span class="toc-title">Reference</span>
+    <a href="#doc-dashboard">Dashboard</a>
+    <a href="#doc-settings">Settings</a>
+    <a href="#doc-backup">Backup &amp; Restore</a>
+    <a href="#doc-faq">FAQ &amp; Troubleshooting</a>
+  </aside>
+
+  <div class="docs-content">
+
+    <article id="doc-intro">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v4"/></svg></span> Introduction</h2>
+      <p class="docs-sub">What Lendra is, and the problem it solves.</p>
+      <p>Lendra is a loan management system built for private lenders: people lending their own capital to borrowers, not a bank or a fintech platform. It replaces spreadsheets and scattered notebooks with one workspace: borrowers, loans, repayments, penalties, a payment calendar, and a separate investment tracker for capital placed outside the loan book.</p>
+      <p>Every number on the dashboard, every penalty calculation, and every printed contract comes from the same local database, so there's one source of truth for the whole lending business.</p>
+      <div class="docs-callout">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v.01M11 12h1v5h1"/></svg>
+        <span>Lendra is local-first. Your borrowers, loans, payments, and uploaded documents stay in a SQLite database on your own machine. There's no cloud dependency and no subscription.</span>
+      </div>
+    </article>
+
+    <article id="doc-install">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0l4-4m-4 4l-4-4M4 21h16"/></svg></span> Getting Started</h2>
+      <p class="docs-sub">Install the native desktop app and you're in business.</p>
+      <p>Lendra ships as a native desktop installer for Windows, macOS, or Linux. No browser required, no account to create: data lives entirely in a local SQLite database in your OS app-data folder. There's no login, since Lendra opens straight to a welcome screen and then the dashboard, built for a single operator.</p>
+      <div class="docs-media"><img src="assets/screenshots/settings.png" alt="Lendra Settings screen"></div>
+    </article>
+
+    <article id="doc-profiles">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span> Profiles</h2>
+      <p class="docs-sub">Run more than one lending book from the same install.</p>
+      <p>Each profile has its own isolated borrowers, loans, payments, and settings. Switch between profiles instantly from the sidebar, and create, rename, or delete profiles as your lending business grows, useful for separating personal lending from a family or partnership book.</p>
+    </article>
+
+    <article id="doc-borrowers">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span> 1. Borrowers</h2>
+      <p class="docs-sub">Onboard and manage everyone you lend to.</p>
+      <ul>
+        <li>Add, edit, archive, and search borrowers.</li>
+        <li>Store ID type, ID number, employer, monthly income, and collateral notes.</li>
+        <li>Upload an ID document image, auto-renamed to <code>LastName_FirstName_ID.ext</code>.</li>
+        <li>Add a co-borrower (guarantor) with full info and their own ID image.</li>
+        <li>Every borrower carries a <strong>Loan Standing</strong> rating (Good, At Risk, or Poor) based on their on-time vs. missed payment ratio.</li>
+      </ul>
+      <div class="docs-media"><img src="assets/screenshots/borrowers.png" alt="Lendra Borrowers page"></div>
+    </article>
+
+    <article id="doc-loans">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h18M6 15h4M3 6h18v13H3z"/></svg></span> 2. Loans</h2>
+      <p class="docs-sub">Configure a loan exactly the way you agreed it.</p>
+      <ol>
+        <li>Open <strong>Loans → New Loan</strong> and pick the borrower.</li>
+        <li>Set the amount, interest rate, payment frequency, and term, in months or days.</li>
+        <li>Choose a payment schedule: daily, weekly, semi-monthly, or monthly.</li>
+        <li>The loan moves through statuses automatically: <strong>Pending</strong>, <strong>Active</strong>, <strong>Overdue</strong>, <strong>Paid</strong>.</li>
+      </ol>
+      <div class="docs-media"><img src="assets/screenshots/loans.png" alt="Lendra Loans page"></div>
+      <div class="docs-callout">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v.01M11 12h1v5h1"/></svg>
+        <span>From a loan's detail page you can view its contract, print an account statement, and attach a signed contract, disbursement receipt, or collateral document.</span>
+      </div>
+    </article>
+
+    <article id="doc-repayments">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0l4-4m-4 4l-4-4M4 21h16"/></svg></span> 3. Repayments</h2>
+      <p class="docs-sub">Record every payment with the right evidence attached.</p>
+      <ul>
+        <li>Log a payment with its transaction type: Cash, GCash, Bank Transfer, Cheque, or Online.</li>
+        <li>Attach a receipt image, auto-named to <code>{LoanNumber}_receipt_{YYYYMMDD}.ext</code>.</li>
+        <li>Use quick-fill cards to apply the exact expected payment amount without manual entry.</li>
+        <li>Review the full payment history per loan, including type and receipt columns.</li>
+      </ul>
+      <div class="docs-media"><img src="assets/screenshots/repayments.png" alt="Lendra Repayments page"></div>
+    </article>
+
+    <article id="doc-penalties">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/></svg></span> 4. Penalties</h2>
+      <p class="docs-sub">Late fees that calculate themselves.</p>
+      <p>Set a daily penalty rate in <strong>Profile Settings</strong>, and any loan that misses a due date starts accruing automatically from that first missed date. The Penalties page lists every loan with penalty history, filterable by Outstanding, Settled, or All, with summary stats for total outstanding, collected, and loan count.</p>
+      <ul>
+        <li>Per-loan breakdown: accumulated, paid, and remaining penalty.</li>
+        <li>The penalty banner on a loan's detail page itemizes period, due date, days overdue, and amount.</li>
+        <li>Penalty is snapshotted the moment a loan leaves overdue; the Collect button deducts it from the balance.</li>
+        <li><strong>Lift Penalty</strong> waives it without collecting payment; the banner turns amber with a "Lifted" badge, and it's fully undoable.</li>
+        <li>When a daily rate is configured, a penalty clause is automatically added to printed loan contracts.</li>
+      </ul>
+      <div class="docs-media"><img src="assets/screenshots/penalties.png" alt="Lendra Penalties page"></div>
+    </article>
+
+    <article id="doc-calendar">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span> 5. Calendar</h2>
+      <p class="docs-sub">See your entire collection schedule at once.</p>
+      <p>The Calendar page lays out the payment schedule across all active loans. Cells show actual amounts collected in green alongside amounts due, so a day that looks fully paid is obvious at a glance.</p>
+      <ul>
+        <li>Click any day to open a detail panel with two tabs: <strong>Scheduled</strong> (due payments) and <strong>Collected</strong> (recorded payments).</li>
+        <li>A month summary shows Collected, Remaining Due, Overdue, and Collection Rate.</li>
+      </ul>
+      <div class="docs-media"><img src="assets/screenshots/calendar.png" alt="Lendra Calendar page"></div>
+    </article>
+
+    <article id="doc-investments">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V9m6 10V5m6 14v-7"/></svg></span> 6. Investments</h2>
+      <p class="docs-sub">Track capital you've placed outside your loan book.</p>
+      <p>Investments are kept separate from loan borrowers, for money placed in external businesses or individuals. Choose between two contract types: <strong>Monthly Interest</strong> (a recurring monthly return) or <strong>Flat Rate</strong> (a single lump-sum interest at maturity).</p>
+      <ul>
+        <li>Record interest returns per period and partial or full capital returns, tracked on a Capital Recovery progress bar.</li>
+        <li>Settle and reopen investments as agreements change.</li>
+        <li>Keep a dated notes log for conversations and agreements with the counterparty.</li>
+        <li>Summary cards show Total Invested, Monthly Earnings, Total Received, and Outstanding overdue amounts.</li>
+      </ul>
+      <div class="docs-media"><img src="assets/screenshots/investment.png" alt="Lendra Investment page"></div>
+    </article>
+
+    <article id="doc-documents">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2h9l3 3v17H6z"/><path d="M9 12h6M9 16h4"/></svg></span> 7. Printable Documents</h2>
+      <p class="docs-sub">Contracts and statements that print cleanly, every time.</p>
+      <ul>
+        <li><strong>Loan contract</strong>: carries your lender branding, auto-scales to fit one page, and card backgrounds render correctly in saved PDFs.</li>
+        <li><strong>Account statement</strong>: full payment history for a loan, same reliable PDF rendering.</li>
+        <li>PDF filenames default to <code>Contract - Name - LoanRef</code> or <code>SOA - Name - LoanRef</code> when saving.</li>
+        <li>The contract terms editor in Settings lets you edit the clauses printed on every loan agreement.</li>
+      </ul>
+    </article>
+
+    <article id="doc-dashboard">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></span> Dashboard</h2>
+      <p class="docs-sub">Your whole book, organized by what matters right now.</p>
+      <p>The dashboard is grouped by priority: <strong>Action Required</strong> (Overdue, Upcoming, Pending, Documents), <strong>Operational Overview</strong> (Borrowers, Active, Paid, Penalties Due), <strong>Financial Summary</strong>, and <strong>Analytics</strong>.</p>
+      <ul>
+        <li>Financial Summary: Available Cash, Outstanding Balance, Total Deployed, Total Capital, Total Collected, Interest Earned. Available Cash is driven by the Starting Capital setting in Settings → Profile.</li>
+        <li>Portfolio by Amount donut chart: principal deployed by loan status.</li>
+        <li>Payment Methods donut chart: payment volume by transaction type.</li>
+        <li>Scrollable alert lists for overdue, upcoming, and pending payments.</li>
+      </ul>
+      <div class="docs-media"><img src="assets/screenshots/dashboard.png" alt="Lendra Dashboard"></div>
+    </article>
+
+    <article id="doc-settings">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.34 1.87l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.7 1.7 0 00-1.87-.34 1.7 1.7 0 00-1 1.55V21a2 2 0 01-4 0v-.09a1.7 1.7 0 00-1-1.55 1.7 1.7 0 00-1.87.34l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.7 1.7 0 00.34-1.87 1.7 1.7 0 00-1.55-1H3a2 2 0 010-4h.09a1.7 1.7 0 001.55-1 1.7 1.7 0 00-.34-1.87l-.06-.06a2 2 0 112.83-2.83l.06.06a1.7 1.7 0 001.87.34H9a1.7 1.7 0 001-1.55V3a2 2 0 014 0v.09a1.7 1.7 0 001 1.55 1.7 1.7 0 001.87-.34l.06-.06a2 2 0 112.83 2.83l-.06.06a1.7 1.7 0 00-.34 1.87V9a1.7 1.7 0 001.55 1H21a2 2 0 010 4h-.09a1.7 1.7 0 00-1.55 1z"/></svg></span> Settings</h2>
+      <p class="docs-sub">Configure your lending book to match how you actually operate.</p>
+      <ul>
+        <li><strong>Profile Settings</strong>: lender name, address, and contact info printed on contracts and statements; currency (15 supported); logo and signature upload (JPG, PNG, SVG); customizable contract terms editor; daily penalty rate.</li>
+        <li><strong>Uploads</strong>: JPEG and PNG uploads are automatically converted to WebP (quality 85), 30–50% smaller with no visible quality loss. Sideways photos are auto-corrected. PDFs and SVGs are stored as-is.</li>
+        <li><strong>Appearance</strong>: light or dark theme.</li>
+        <li><strong>Auto Backup</strong>: toggle on/off, choose how often it runs (5/15/30/60 minutes), and on desktop pick which folder backups save to.</li>
+        <li><strong>Account</strong>: change admin username and password.</li>
+        <li><strong>Danger Zone</strong>: delete all data (requires a prior backup and confirmation), or clean up orphaned uploaded files.</li>
+      </ul>
+      <div class="docs-media"><img src="assets/screenshots/settings.png" alt="Lendra Settings page"></div>
+    </article>
+
+    <article id="doc-backup">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 11-3-6.7M21 4v5h-5"/></svg></span> Backup &amp; Restore</h2>
+      <p class="docs-sub">Your book, protected on your own terms.</p>
+      <p>Export a portable JSON backup any time from <strong>Settings → Backup &amp; Restore</strong>, with every uploaded image (IDs, receipts, loan documents) embedded as base64 so a single file is a complete snapshot. Restore from any backup file at any time. Use <strong>Back Up Now</strong> to save a backup silently without downloading, or turn on Auto Backup to save one automatically on the interval you choose.</p>
+    </article>
+
+    <article id="doc-faq">
+      <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 015 .5c0 1.7-2.5 1.7-2.5 3.5M12 17h.01"/></svg></span> FAQ &amp; Troubleshooting</h2>
+      <h3>Does my data leave my machine?</h3>
+      <p>No. Lendra has no cloud dependency: data lives in a local SQLite database in your OS app-data folder, and nothing is uploaded anywhere.</p>
+      <h3>What happens if I miss a payment?</h3>
+      <p>The loan status moves to Overdue and, if a daily penalty rate is configured, a penalty starts accruing automatically from the first missed due date.</p>
+      <h3>Can I run more than one lending book?</h3>
+      <p>Yes. Create additional profiles, each with its own isolated borrowers, loans, and settings.</p>
+      <h3>Is there a login screen?</h3>
+      <p>No. Lendra is built for a single operator and opens straight to a welcome screen, then the dashboard.</p>
+      <h3>Does Lendra send reminders to borrowers, or collect payments for me?</h3>
+      <p>No. Unlike some collection apps, Lendra doesn't send automated email, SMS, or call reminders, and it doesn't process payments or generate payment links. It surfaces upcoming and overdue payments on your dashboard and calendar, but following up with a borrower and collecting the money are still on you. See the <a href="about" style="color:var(--primary); text-decoration:underline;">About page</a> for the full list of what Lendra intentionally doesn't do.</p>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <a href="/" class="brand" style="margin-bottom:14px;">
+          <img src="assets/lendra-logo.svg" alt="Lendra logo">
+          Lendra
+        </a>
+        <p style="color: var(--fg-muted); font-size:0.9rem; max-width:280px; margin-top:12px;">Private, local-first loan management for private lenders.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="/#showcase">Product Tour</a></li>
+          <li><a href="gallery">Gallery</a></li>
+          <li><a href="changelog">Release Notes</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="docs">Documentation</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="docs#doc-faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy">Privacy Policy</a></li>
+          <li><a href="terms">Terms of Service</a></li>
+          <li><a href="#" data-mail="YnJpb25lcy5nLmJyeWxlQGdtYWlsLmNvbQ==" rel="nofollow noopener">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span class="js-year">2026</span> Lendra. Private loan management for private lenders.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lendra.vercel.app/sitemap.xml

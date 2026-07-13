@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lendra: Loan Management for Private Lenders</title>
+<meta name="description" content="Lendra is a private, local-first loan management system for private lenders: borrowers, loans, repayments, penalties, and investments, all in one native desktop workspace. No cloud, no subscriptions.">
+<link rel="canonical" href="https://lendra.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lendra">
+<meta property="og:title" content="Lendra: Loan Management for Private Lenders">
+<meta property="og:description" content="A private, local-first loan management system for private lenders: borrowers, loans, repayments, penalties, and investments, all in one native desktop workspace.">
+<meta property="og:url" content="https://lendra.vercel.app/">
+<meta property="og:image" content="https://lendra.vercel.app/assets/screenshots/dashboard.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lendra: Loan Management for Private Lenders">
+<meta name="twitter:description" content="A private, local-first loan management system for private lenders: borrowers, loans, repayments, penalties, and investments, all in one native desktop workspace.">
+<meta name="twitter:image" content="https://lendra.vercel.app/assets/screenshots/dashboard.png">
+<meta name="theme-color" content="#0B4A52">
+<link rel="icon" href="assets/lendra-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Lendra",
+  "operatingSystem": "Windows, macOS, Linux, Web",
+  "applicationCategory": "FinanceApplication",
+  "applicationSubCategory": "Loan Management Software",
+  "description": "Lendra is a private, local-first loan management system for private lenders: borrowers, loans, repayments, penalties, calendar, and investment tracking, backed by a local SQLite database.",
+  "softwareVersion": "1.0",
+  "url": "https://lendra.vercel.app/",
+  "screenshot": "https://lendra.vercel.app/assets/screenshots/dashboard.png"
+}
+</script>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a href="/" class="brand">
+      <img src="assets/lendra-logo.svg" alt="Lendra logo">
+      Lendra
+    </a>
+    <nav class="nav-links">
+      <a href="/" class="active">Home</a>
+      <a href="gallery">Gallery</a>
+      <a href="docs">Docs</a>
+      <a href="changelog">Changelog</a>
+      <a href="about">About</a>
+    <a href="#" data-mail="YnJpb25lcy5nLmJyeWxlQGdtYWlsLmNvbQ==" rel="nofollow noopener" class="btn btn-primary mobile-cta">Get in Touch</a>
+    </nav>
+    <div class="nav-right">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode">
+        <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="iconSun" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <a href="#" data-mail="YnJpb25lcy5nLmJyeWxlQGdtYWlsLmNvbQ==" rel="nofollow noopener" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="badge"><span class="dot"></span>Private Loan Management, Built to Run Locally</span>
+        <h1>Run Your Lending Book Like <span class="grad">a Real Business</span>, Not a Spreadsheet</h1>
+        <p class="lead">Borrowers, loans, repayments, penalties, and investments, one workspace, fully under your control.</p>
+        <div class="hero-actions">
+          <a href="#" data-mail="YnJpb25lcy5nLmJyeWxlQGdtYWlsLmNvbQ==" rel="nofollow noopener" class="btn btn-primary btn-lg">
+            Get in Touch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l9 6 9-6M3 6h18v12H3z"/></svg>
+          </a>
+          <a href="gallery" class="btn btn-ghost btn-lg">View Gallery</a>
+        </div>
+        <p class="hero-note">Native desktop app. Local SQLite database. No cloud, no subscriptions.</p>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-stack">
+          <div class="stack-shot stack-back-2">
+            <img src="assets/screenshots/loans.png" alt="Lendra Loans screen">
+          </div>
+          <div class="stack-shot stack-back-1">
+            <img src="assets/screenshots/borrowers.png" alt="Lendra Borrowers screen">
+          </div>
+          <div class="hero-shot-main">
+            <div class="browserbar">
+              <div class="dots"><span></span><span></span><span></span></div>
+              <div class="urlbar">Lendra: Dashboard</div>
+              <div style="width:40px"></div>
+            </div>
+            <img src="assets/screenshots/dashboard.png" alt="Lendra Dashboard screen">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="providers-strip">
+    <div class="wrap">
+      <p>Built for how private lenders actually operate.</p>
+      <div class="provider-row reveal">
+        <span class="provider-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v4"/></svg>
+          No Cloud Dependency
+        </span>
+        <span class="provider-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 118 0v4"/></svg>
+          Local SQLite Database
+        </span>
+        <span class="provider-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+          Native Desktop App
+        </span>
+        <span class="provider-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          Multiple Lending Profiles
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOT SHOWCASE -->
+  <section id="showcase">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Product Tour</span>
+        <h2>Everything a private lender needs, in one place</h2>
+        <p>From onboarding a borrower to closing out a fully repaid loan, here's the full workflow.</p>
+      </div>
+
+      <div class="showcase-row reveal">
+        <div class="showcase-text">
+          <span class="kicker">Dashboard</span>
+          <h3>Your whole book, at a glance.</h3>
+          <p>Organized by priority: what needs action today, what's operationally overdue, and where your capital actually sits.</p>
+          <ul class="showcase-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Available Cash, Outstanding Balance, Total Capital, Interest Earned</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Portfolio and Payment Methods donut charts</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Overdue, upcoming, and pending payment alerts</li>
+          </ul>
+        </div>
+        <div class="showcase-media"><img src="assets/screenshots/dashboard.png" alt="Lendra Dashboard page"></div>
+      </div>
+
+      <div class="showcase-row reverse reveal">
+        <div class="showcase-text">
+          <span class="kicker">Borrower Management</span>
+          <h3>Every borrower, fully documented.</h3>
+          <p>ID, employer, income, collateral notes, and co-borrower details, all searchable in one list.</p>
+          <ul class="showcase-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> ID document upload with auto file naming</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Co-borrower (guarantor) support</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Loan Standing rating: Good, At Risk, or Poor</li>
+          </ul>
+        </div>
+        <div class="showcase-media"><img src="assets/screenshots/borrowers.png" alt="Lendra Borrowers page"></div>
+      </div>
+
+      <div class="showcase-row reveal">
+        <div class="showcase-text">
+          <span class="kicker">Loan Management</span>
+          <h3>Configure a loan exactly your way.</h3>
+          <p>Amount, interest rate, payment frequency, and term, with printable contracts ready to sign.</p>
+          <ul class="showcase-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Daily, weekly, semi-monthly, or monthly schedules</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Pending, Active, Overdue, and Paid statuses</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Auto-scaling contract and account statement PDFs</li>
+          </ul>
+        </div>
+        <div class="showcase-media"><img src="assets/screenshots/loans.png" alt="Lendra Loans page"></div>
+      </div>
+
+      <div class="showcase-row reverse reveal">
+        <div class="showcase-text">
+          <span class="kicker">Repayments</span>
+          <h3>Record it once, right the first time.</h3>
+          <p>Track transaction type, attach a receipt, and get quick-fill cards for the exact expected amount.</p>
+          <ul class="showcase-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Cash, GCash, Bank Transfer, Cheque, Online</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Receipt image auto-named to loan number and date</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Full payment history per loan</li>
+          </ul>
+        </div>
+        <div class="showcase-media"><img src="assets/screenshots/repayments.png" alt="Lendra Repayments page"></div>
+      </div>
+
+      <div class="showcase-row reveal">
+        <div class="showcase-text">
+          <span class="kicker">Calendar</span>
+          <h3>See collections before they're late.</h3>
+          <p>A visual schedule across every active loan, with actual collections alongside what's due.</p>
+          <ul class="showcase-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Scheduled vs. Collected detail panel per day</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Month summary: Collected, Remaining, Overdue, Collection Rate</li>
+          </ul>
+        </div>
+        <div class="showcase-media"><img src="assets/screenshots/calendar.png" alt="Lendra Calendar page"></div>
+      </div>
+
+      <div class="showcase-row reverse reveal">
+        <div class="showcase-text">
+          <span class="kicker">Penalties</span>
+          <h3>Late fees, tracked automatically.</h3>
+          <p>Penalty accrues from the first missed due date at a rate you configure, with a full itemized breakdown.</p>
+          <ul class="showcase-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Filter by Outstanding, Settled, or All</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Lift Penalty to waive without collecting, fully undoable</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Penalty clause auto-added to printed contracts</li>
+          </ul>
+        </div>
+        <div class="showcase-media"><img src="assets/screenshots/penalties.png" alt="Lendra Penalties page"></div>
+      </div>
+
+      <div class="showcase-row reveal">
+        <div class="showcase-text">
+          <span class="kicker">Investments</span>
+          <h3>Track capital beyond your loan book.</h3>
+          <p>Money placed in external businesses or individuals, with two contract types and a Capital Recovery progress bar.</p>
+          <ul class="showcase-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Monthly Interest or Flat Rate contracts</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Partial or full capital returns, dated notes log</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Settle and reopen investments anytime</li>
+          </ul>
+        </div>
+        <div class="showcase-media"><img src="assets/screenshots/investment.png" alt="Lendra Investment page"></div>
+      </div>
+
+      <div style="text-align:center; margin-top:24px;">
+        <a href="gallery" class="btn btn-ghost btn-lg">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY LENDRA -->
+  <section style="background: var(--bg-subtle); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Why Lendra</span>
+        <h2>Built for how private lenders actually work</h2>
+      </div>
+      <div class="card-grid reveal">
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 118 0v4"/></svg></div>
+          <h3>Local-First, Always</h3>
+          <p>Your book lives in a local SQLite database on your own machine. No cloud dependency, no third party sees your ledger.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>Full Penalty Automation</h3>
+          <p>Late fees accrue automatically at your configured daily rate, snapshotted the moment a loan leaves overdue.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z"/></svg></div>
+          <h3>Print-Ready Documents</h3>
+          <p>Loan contracts and account statements with your branding, auto-scaled to one page, ready to sign and file.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+          <h3>A Real Desktop App</h3>
+          <p>Native window, native performance, no browser tab to leave open. Install it once and it lives on your machine like any other app.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+          <h3>Multiple Lending Books</h3>
+          <p>Separate profiles for separate lending books, each with isolated borrowers, loans, and settings. Switch instantly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 11-3-6.7M21 4v5h-5"/></svg></div>
+          <h3>Backup and Restore</h3>
+          <p>Export a full snapshot on demand or automate it on an interval, with every uploaded image embedded in the backup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENCY / FORMAT STRIP -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Speaks Your Currency</span>
+        <h2>Priced and printed the way your borrowers expect</h2>
+      </div>
+      <div class="export-grid reveal">
+        <div class="export-card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 6v12M9 9h4.5a2 2 0 010 4H9m0 0h5"/></svg></div><span>PHP</span></div>
+        <div class="export-card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 6v12M8 10h8M8 14h6"/></svg></div><span>USD</span></div>
+        <div class="export-card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M7 9h10M7 13h6M15 17l2-2-2-2"/></svg></div><span>EUR</span></div>
+        <div class="export-card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 8h8M8 12h8M10 16h4"/></svg></div><span>+12 more</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section style="background: var(--bg-subtle); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">How It Works</span>
+        <h2>Borrower in, evidenced repayment out</h2>
+      </div>
+      <div class="steps reveal">
+        <div class="step">
+          <div class="num">1</div>
+          <h4>Onboard</h4>
+          <p>Add a borrower with ID, income, and collateral notes.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h4>Disburse</h4>
+          <p>Create a loan with your terms and print the contract.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h4>Collect</h4>
+          <p>Record repayments with receipts as they come in.</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h4>Track</h4>
+          <p>Watch penalties, standing, and portfolio ROI update live.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2>Interested in Running Your Book on Lendra?</h2>
+        <p>Lendra isn't publicly distributed yet. Reach out directly and we'll talk through what you need.</p>
+        <div class="hero-actions">
+          <a href="#" data-mail="YnJpb25lcy5nLmJyeWxlQGdtYWlsLmNvbQ==" rel="nofollow noopener" class="btn btn-primary btn-lg">Get in Touch</a>
+          <a href="docs" class="btn btn-ghost btn-lg">View Documentation</a>
+        </div>
+        <p style="margin-top:16px; font-size:0.85rem; opacity:.85;">v1.0 &middot; Windows, macOS &amp; Linux</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <a href="/" class="brand" style="margin-bottom:14px;">
+          <img src="assets/lendra-logo.svg" alt="Lendra logo">
+          Lendra
+        </a>
+        <p style="color: var(--fg-muted); font-size:0.9rem; max-width:280px; margin-top:12px;">Private, local-first loan management for private lenders.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="/#showcase">Product Tour</a></li>
+          <li><a href="gallery">Gallery</a></li>
+          <li><a href="changelog">Release Notes</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="docs">Documentation</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="docs#doc-faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy">Privacy Policy</a></li>
+          <li><a href="terms">Terms of Service</a></li>
+          <li><a href="#" data-mail="YnJpb25lcy5nLmJyeWxlQGdtYWlsLmNvbQ==" rel="nofollow noopener">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span class="js-year">2026</span> Lendra. Private loan management for private lenders.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
