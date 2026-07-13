@@ -4,16 +4,6 @@
   var iconMoon = document.getElementById('iconMoon');
   var iconSun = document.getElementById('iconSun');
 
-  // Contact links: address is stored base64-encoded in data-mail so it never
-  // sits as plain text in the page source for scrapers to harvest.
-  var mailLinks = document.querySelectorAll('a[data-mail]');
-  mailLinks.forEach(function (a) {
-    a.addEventListener('click', function (e) {
-      e.preventDefault();
-      window.location.href = 'mailto:' + atob(a.getAttribute('data-mail'));
-    });
-  });
-
   // Mobile nav menu
   var navToggle = document.getElementById('navToggle');
   var navLinks = document.querySelector('.nav-links');
