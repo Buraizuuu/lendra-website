@@ -8,14 +8,20 @@
 <link rel="canonical" href="https://lendra.vercel.app/docs">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Lendra">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="Documentation | Lendra">
 <meta property="og:description" content="The complete Lendra guide: borrowers, loans, repayments, penalties, calendar, investments, profiles, settings, and backup &amp; restore.">
 <meta property="og:url" content="https://lendra.vercel.app/docs">
 <meta property="og:image" content="https://lendra.vercel.app/assets/screenshots/dashboard.png">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1000">
+<meta property="og:image:alt" content="Lendra dashboard showing loan portfolio overview">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Documentation | Lendra">
 <meta name="twitter:description" content="The complete Lendra guide: borrowers, loans, repayments, penalties, calendar, investments, profiles, settings, and backup &amp; restore.">
 <meta name="twitter:image" content="https://lendra.vercel.app/assets/screenshots/dashboard.png">
+<meta name="twitter:image:alt" content="Lendra dashboard showing loan portfolio overview">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#0B4A52">
 <link rel="icon" href="assets/lendra-logo.svg" type="image/svg+xml">
 <link rel="icon" href="assets/lendra-logo.png" type="image/png">
@@ -24,6 +30,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/main.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://lendra.vercel.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Documentation",
+      "item": "https://lendra.vercel.app/docs"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -105,7 +131,7 @@
       <h2><span class="docs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0l4-4m-4 4l-4-4M4 21h16"/></svg></span> Getting Started</h2>
       <p class="docs-sub">Install the native desktop app and you're in business.</p>
       <p>Lendra ships as a native desktop installer for Windows, macOS, or Linux. No browser required, no account to create: data lives entirely in a local SQLite database in your OS app-data folder. There's no login, since Lendra opens straight to a welcome screen and then the dashboard, built for a single operator.</p>
-      <div class="docs-media"><img src="assets/screenshots/settings.png" alt="Lendra Settings screen"></div>
+      <div class="docs-media"><img src="assets/screenshots/settings.png" alt="Lendra Settings screen" loading="lazy" decoding="async"></div>
     </article>
 
     <article id="doc-profiles">
@@ -124,7 +150,7 @@
         <li>Add a co-borrower (guarantor) with full info and their own ID image.</li>
         <li>Every borrower carries a <strong>Loan Standing</strong> rating (Good, At Risk, or Poor) based on their on-time vs. missed payment ratio.</li>
       </ul>
-      <div class="docs-media"><img src="assets/screenshots/borrowers.png" alt="Lendra Borrowers page"></div>
+      <div class="docs-media"><img src="assets/screenshots/borrowers.png" alt="Lendra Borrowers page" loading="lazy" decoding="async"></div>
     </article>
 
     <article id="doc-loans">
@@ -136,7 +162,7 @@
         <li>Choose a payment schedule: daily, weekly, semi-monthly, or monthly.</li>
         <li>The loan moves through statuses automatically: <strong>Pending</strong>, <strong>Active</strong>, <strong>Overdue</strong>, <strong>Paid</strong>.</li>
       </ol>
-      <div class="docs-media"><img src="assets/screenshots/loans.png" alt="Lendra Loans page"></div>
+      <div class="docs-media"><img src="assets/screenshots/loans.png" alt="Lendra Loans page" loading="lazy" decoding="async"></div>
       <div class="docs-callout">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v.01M11 12h1v5h1"/></svg>
         <span>From a loan's detail page you can view its contract, print an account statement, and attach a signed contract, disbursement receipt, or collateral document.</span>
@@ -152,7 +178,7 @@
         <li>Use quick-fill cards to apply the exact expected payment amount without manual entry.</li>
         <li>Review the full payment history per loan, including type and receipt columns.</li>
       </ul>
-      <div class="docs-media"><img src="assets/screenshots/repayments.png" alt="Lendra Repayments page"></div>
+      <div class="docs-media"><img src="assets/screenshots/repayments.png" alt="Lendra Repayments page" loading="lazy" decoding="async"></div>
     </article>
 
     <article id="doc-penalties">
@@ -166,7 +192,7 @@
         <li><strong>Lift Penalty</strong> waives it without collecting payment; the banner turns amber with a "Lifted" badge, and it's fully undoable.</li>
         <li>When a daily rate is configured, a penalty clause is automatically added to printed loan contracts.</li>
       </ul>
-      <div class="docs-media"><img src="assets/screenshots/penalties.png" alt="Lendra Penalties page"></div>
+      <div class="docs-media"><img src="assets/screenshots/penalties.png" alt="Lendra Penalties page" loading="lazy" decoding="async"></div>
     </article>
 
     <article id="doc-calendar">
@@ -177,7 +203,7 @@
         <li>Click any day to open a detail panel with two tabs: <strong>Scheduled</strong> (due payments) and <strong>Collected</strong> (recorded payments).</li>
         <li>A month summary shows Collected, Remaining Due, Overdue, and Collection Rate.</li>
       </ul>
-      <div class="docs-media"><img src="assets/screenshots/calendar.png" alt="Lendra Calendar page"></div>
+      <div class="docs-media"><img src="assets/screenshots/calendar.png" alt="Lendra Calendar page" loading="lazy" decoding="async"></div>
     </article>
 
     <article id="doc-investments">
@@ -190,7 +216,7 @@
         <li>Keep a dated notes log for conversations and agreements with the counterparty.</li>
         <li>Summary cards show Total Invested, Monthly Earnings, Total Received, and Outstanding overdue amounts.</li>
       </ul>
-      <div class="docs-media"><img src="assets/screenshots/investment.png" alt="Lendra Investment page"></div>
+      <div class="docs-media"><img src="assets/screenshots/investment.png" alt="Lendra Investment page" loading="lazy" decoding="async"></div>
     </article>
 
     <article id="doc-documents">
@@ -214,7 +240,7 @@
         <li>Payment Methods donut chart: payment volume by transaction type.</li>
         <li>Scrollable alert lists for overdue, upcoming, and pending payments.</li>
       </ul>
-      <div class="docs-media"><img src="assets/screenshots/dashboard.png" alt="Lendra Dashboard"></div>
+      <div class="docs-media"><img src="assets/screenshots/dashboard.png" alt="Lendra Dashboard" loading="lazy" decoding="async"></div>
     </article>
 
     <article id="doc-settings">
@@ -228,7 +254,7 @@
         <li><strong>Account</strong>: change admin username and password.</li>
         <li><strong>Danger Zone</strong>: delete all data (requires a prior backup and confirmation), or clean up orphaned uploaded files.</li>
       </ul>
-      <div class="docs-media"><img src="assets/screenshots/settings.png" alt="Lendra Settings page"></div>
+      <div class="docs-media"><img src="assets/screenshots/settings.png" alt="Lendra Settings page" loading="lazy" decoding="async"></div>
     </article>
 
     <article id="doc-backup">

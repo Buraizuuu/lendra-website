@@ -8,14 +8,20 @@
 <link rel="canonical" href="https://lendra.vercel.app/gallery">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Lendra">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="Gallery | Lendra">
 <meta property="og:description" content="A full visual tour of Lendra: Dashboard, Borrowers, Loans, Repayments, Calendar, Penalties, Investments, and Settings.">
 <meta property="og:url" content="https://lendra.vercel.app/gallery">
 <meta property="og:image" content="https://lendra.vercel.app/assets/screenshots/dashboard.png">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1000">
+<meta property="og:image:alt" content="Lendra dashboard showing loan portfolio overview">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Gallery | Lendra">
 <meta name="twitter:description" content="A full visual tour of Lendra: Dashboard, Borrowers, Loans, Repayments, Calendar, Penalties, Investments, and Settings.">
 <meta name="twitter:image" content="https://lendra.vercel.app/assets/screenshots/dashboard.png">
+<meta name="twitter:image:alt" content="Lendra dashboard showing loan portfolio overview">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#0B4A52">
 <link rel="icon" href="assets/lendra-logo.svg" type="image/svg+xml">
 <link rel="icon" href="assets/lendra-logo.png" type="image/png">
@@ -24,6 +30,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/main.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://lendra.vercel.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Gallery",
+      "item": "https://lendra.vercel.app/gallery"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -74,7 +100,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Portfolio by Amount &amp; Payment Methods donut charts</li>
         </ul>
       </div>
-      <div class="gallery-media"><img src="assets/screenshots/dashboard.png" alt="Lendra Dashboard"></div>
+      <div class="gallery-media"><img src="assets/screenshots/dashboard.png" alt="Lendra Dashboard" loading="lazy" decoding="async"></div>
     </div>
 
     <div class="gallery-item reverse reveal">
@@ -87,7 +113,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Co-borrower (guarantor) support</li>
         </ul>
       </div>
-      <div class="gallery-media"><img src="assets/screenshots/borrowers.png" alt="Lendra Borrowers page"></div>
+      <div class="gallery-media"><img src="assets/screenshots/borrowers.png" alt="Lendra Borrowers page" loading="lazy" decoding="async"></div>
     </div>
 
     <div class="gallery-item reveal">
@@ -100,7 +126,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Pending, Active, Overdue, Paid statuses</li>
         </ul>
       </div>
-      <div class="gallery-media"><img src="assets/screenshots/loans.png" alt="Lendra Loans page"></div>
+      <div class="gallery-media"><img src="assets/screenshots/loans.png" alt="Lendra Loans page" loading="lazy" decoding="async"></div>
     </div>
 
     <div class="gallery-item reverse reveal">
@@ -113,7 +139,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Full payment history per loan</li>
         </ul>
       </div>
-      <div class="gallery-media"><img src="assets/screenshots/repayments.png" alt="Lendra Repayments page"></div>
+      <div class="gallery-media"><img src="assets/screenshots/repayments.png" alt="Lendra Repayments page" loading="lazy" decoding="async"></div>
     </div>
 
     <div class="gallery-item reveal">
@@ -126,7 +152,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Month summary with Collection Rate</li>
         </ul>
       </div>
-      <div class="gallery-media"><img src="assets/screenshots/calendar.png" alt="Lendra Calendar page"></div>
+      <div class="gallery-media"><img src="assets/screenshots/calendar.png" alt="Lendra Calendar page" loading="lazy" decoding="async"></div>
     </div>
 
     <div class="gallery-item reverse reveal">
@@ -139,7 +165,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Lift Penalty, waive without collecting; fully undoable</li>
         </ul>
       </div>
-      <div class="gallery-media"><img src="assets/screenshots/penalties.png" alt="Lendra Penalties page"></div>
+      <div class="gallery-media"><img src="assets/screenshots/penalties.png" alt="Lendra Penalties page" loading="lazy" decoding="async"></div>
     </div>
 
     <div class="gallery-item reveal">
@@ -152,7 +178,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Capital Recovery progress bar</li>
         </ul>
       </div>
-      <div class="gallery-media"><img src="assets/screenshots/investment.png" alt="Lendra Investment page"></div>
+      <div class="gallery-media"><img src="assets/screenshots/investment.png" alt="Lendra Investment page" loading="lazy" decoding="async"></div>
     </div>
 
     <div class="gallery-item reverse reveal">
@@ -165,7 +191,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Backup &amp; restore, orphaned upload cleanup</li>
         </ul>
       </div>
-      <div class="gallery-media"><img src="assets/screenshots/settings.png" alt="Lendra Settings page"></div>
+      <div class="gallery-media"><img src="assets/screenshots/settings.png" alt="Lendra Settings page" loading="lazy" decoding="async"></div>
     </div>
 
   </div>
